@@ -1,0 +1,163 @@
+/* General styles */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #131313;
+	color: #dadada;
+	font-family: "Proza Libre", sans-serif;
+}
+
+section:nth-child(1) {
+	display: flex;
+	justify-content: center;
+	margin: 3rem 0;
+}
+
+.tiki {
+	height: 20rem;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: opacity 1.5s ease-in-out;
+}
+
+.mySlides img {
+	border-radius: 1.25rem;
+	width: 100%;
+}
+
+.mySlides.active {
+	opacity: 1;
+	position: relative;
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Fading animation */
+.fade-in {
+	animation: fadeIn 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-out {
+	animation: fadeOut 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.btn-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	--color: #be3d26;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .5s;
+	border: none;
+	background-color: transparent;
+	margin-bottom: 2rem;
+}
+
+.btn div {
+	font-family: "Proza Libre", sans-serif;
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+	background: var(--color);
+	border-radius: 2rem;
+	color: white;
+	padding: 1rem;
+}
+
+.btn::before {
+	content: '';
+	z-index: -1;
+	background-color: var(--color);
+	border: 2px solid #131313;
+	border-radius: 2rem;
+	width: 110%;
+	height: 100%;
+	position: absolute;
+	transform: rotate(10deg);
+	transition: .5s;
+	opacity: 0.2;
+}
+
+.btn:hover {
+	cursor: pointer;
+	filter: brightness(1.2);
+	transform: scale(1.1);
+}
+
+.btn:hover::before {
+	transform: rotate(0deg);
+	opacity: 1;
+}
+
+.btn svg {
+	transform: translateX(-200%);
+	transition: .5s;
+	width: 0;
+	opacity: 0;
+}
+
+.btn:hover svg {
+	width: 25px;
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+.btn:active {
+	filter: brightness(1.4);
+}
+
+.bottom-section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 2rem;
+	/* Ensure there's space between sections */
+}
+
+.phone {
+	font-size: 2rem;
+}
