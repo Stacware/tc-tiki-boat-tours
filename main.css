@@ -15,6 +15,8 @@ section:nth-child(1) {
 	margin: 3rem 0;
 }
 
+img {}
+
 .tiki {
 	height: 15rem;
 }
@@ -37,6 +39,7 @@ section:nth-child(1) {
 .mySlides img {
 	border-radius: 1.25rem;
 	width: 100%;
+	max-height: 800px;
 }
 
 .mySlides.active {
@@ -161,4 +164,40 @@ section:nth-child(1) {
 
 .phone {
 	font-size: 2rem;
+}
+
+.phone {
+	text-align: center;
+}
+
+.phone a {
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+	position: relative;
+}
+
+.phone i {
+	color: #ffffff;
+	display: block;
+	margin: 0 auto;
+}
+
+.phone .number-container {
+	display: inline-block;
+	text-align: center;
+}
+
+/* .phone .number-container div {
+	font-size: 16px;
+} */
+
+.phone .number-container .tiki {
+	position: relative;
+}
+
+.phone .number-container .extension {
+	position: absolute;
+	right: -20px;
+	top: 70px;
 }
