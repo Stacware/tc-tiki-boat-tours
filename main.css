@@ -21,6 +21,25 @@ img {}
 	height: 15rem;
 }
 
+.intro {
+	padding: 0 28rem;
+	text-align: center;
+	margin: 10rem 0;
+	font-size: 24px;
+}
+
+a {
+	color: #be3d26;
+	text-decoration: none;
+}
+
+.friends {
+	padding: 0 28rem;
+	text-align: center;
+	margin-bottom: 10rem;
+
+}
+
 .slideshow-container {
 	max-width: 1000px;
 	position: relative;
