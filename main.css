@@ -6,13 +6,21 @@
 body {
 	background: #131313;
 	color: #dadada;
-	font-family: "Proza Libre", sans-serif;
+	font-family: "Proza Libre", sans-serif !important;
 }
 
 section:nth-child(1) {
 	display: flex;
 	justify-content: center;
 	margin: 3rem 0;
+}
+
+header {
+	display: block;
+}
+
+.title {
+	display: block;
 }
 
 img {}
@@ -22,9 +30,9 @@ img {}
 }
 
 .intro {
-	padding: 0 28rem;
+	padding: 0 10%;
 	text-align: center;
-	margin: 10rem 0;
+	margin: 5rem 0;
 	font-size: 24px;
 }
 
@@ -34,36 +42,19 @@ a {
 }
 
 .friends {
-	padding: 0 28rem;
+	padding: 0 10%;
 	text-align: center;
 	margin-bottom: 10rem;
 
 }
 
-.slideshow-container {
-	max-width: 1000px;
-	position: relative;
-	margin: auto;
-}
-
-.mySlides {
-	opacity: 0;
+.carousel-item {
 	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	transition: opacity 1.5s ease-in-out;
+	max-height: 900px;
 }
 
-.mySlides img {
-	border-radius: 1.25rem;
-	width: 100%;
-	max-height: 800px;
-}
-
-.mySlides.active {
-	opacity: 1;
-	position: relative;
+.carousel-inner {
+	border-radius: 20px;
 }
 
 .numbertext {
@@ -103,12 +94,12 @@ a {
 	}
 }
 
-.btn-wrapper {
+.button-wrapper {
 	display: flex;
 	justify-content: center;
 }
 
-.btn {
+.button {
 	--color: #be3d26;
 	position: relative;
 	display: flex;
@@ -121,7 +112,7 @@ a {
 	text-decoration: none;
 }
 
-.btn div {
+.button div {
 	font-family: "Proza Libre", sans-serif;
 	letter-spacing: 2px;
 	font-size: 1.5rem;
@@ -131,7 +122,7 @@ a {
 	padding: 1rem;
 }
 
-.btn::before {
+.button::before {
 	content: '';
 	z-index: -1;
 	background-color: var(--color);
@@ -145,31 +136,31 @@ a {
 	opacity: 0.2;
 }
 
-.btn:hover {
+.button:hover {
 	cursor: pointer;
 	filter: brightness(1.2);
 	transform: scale(1.1);
 }
 
-.btn:hover::before {
+.button:hover::before {
 	transform: rotate(0deg);
 	opacity: 1;
 }
 
-.btn svg {
+.button svg {
 	transform: translateX(-200%);
 	transition: .5s;
 	width: 0;
 	opacity: 0;
 }
 
-.btn:hover svg {
+.button:hover svg {
 	width: 25px;
 	transform: translateX(0%);
 	opacity: 1;
 }
 
-.btn:active {
+.button:active {
 	filter: brightness(1.4);
 }
 
@@ -219,4 +210,9 @@ a {
 	position: absolute;
 	right: -20px;
 	top: 70px;
+}
+
+img.gt-para {
+	height: 10rem;
+	width: 10rem;
 }
