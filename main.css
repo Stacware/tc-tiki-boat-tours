@@ -327,6 +327,13 @@ a:hover {
 	margin-bottom: 0.5rem;
 }
 
+.tour-special {
+	font-size: 1rem;
+	color: var(--accent);
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
 .tour-duration {
 	font-size: 1rem;
 	color: var(--dark-blue);
@@ -338,6 +345,11 @@ a:hover {
 	color: #555;
 	line-height: 1.5;
 	margin: 0;
+}
+
+.tours-cta {
+	text-align: center;
+	margin: 2rem 0;
 }
 
 .gallery-content {
@@ -654,4 +666,6 @@ footer {
 	.tour-body {
 		padding: 1rem;
 	}
+
+
 }
