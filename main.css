@@ -353,12 +353,12 @@ a:hover {
 }
 
 .gallery-content {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 }
 
 .carousel-item img {
-	height: 500px;
+	height: 800px;
 	object-fit: cover;
 	border-radius: 15px;
 }
