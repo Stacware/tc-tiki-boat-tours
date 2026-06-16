@@ -506,6 +506,84 @@ a:hover {
 	color: white;
 }
 
+/* Location Section */
+.location {
+	padding: 5rem 0;
+	background-color: var(--light-blue);
+	position: relative;
+}
+
+.location h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 3rem;
+	color: var(--primary);
+}
+
+.location-content {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.location-details {
+	flex: 1;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.location-card {
+	background-color: white;
+	padding: 1.5rem;
+	border-radius: 15px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+	transition: all 0.3s ease;
+}
+
+.location-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.location-card i {
+	font-size: 2.5rem;
+	color: var(--accent);
+	margin-bottom: 0.5rem;
+}
+
+.location-card h3 {
+	font-size: 1.4rem;
+	margin-bottom: 0.5rem;
+	color: var(--primary);
+}
+
+.location-card a {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--dark-blue);
+}
+
+.location-card a:hover {
+	color: var(--accent);
+}
+
+.location-map {
+	flex: 1;
+	min-width: 300px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.location-map img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 /* Contact Section */
 .contact {
 	padding: 5rem 0;
